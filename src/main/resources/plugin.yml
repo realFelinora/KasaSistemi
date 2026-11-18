@@ -1,0 +1,22 @@
+name: KasaSistemi
+version: '${version}'
+main: dev.felinora.kasa.KasaSistemi
+api-version: '1.21'
+author: Felinora
+description: Anahtarlı, animasyonlu Türkçe kasa (sandık) sistemi.
+
+commands:
+  kasa:
+    description: Kasa yönetim komutları.
+    usage: /<command> <anahtar|koy|kaldir|alan|liste|yenile>
+  kasalar:
+    description: Kasa alanına ışınlanır.
+    usage: /<command>
+
+permissions:
+  kasa.kullan:
+    description: Kasaları açabilir, /kasalar kullanabilir.
+    default: true
+  kasa.yonetici:
+    description: Kasa koyma, anahtar verme, ayar yenileme.
+    default: op

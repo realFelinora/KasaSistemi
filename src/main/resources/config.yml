@@ -1,0 +1,72 @@
+# ==========================================
+#   KasaSistemi - Ayarlar
+#   Renk kodları için & kullanabilirsiniz.
+# ==========================================
+
+# Şansı bu değerin altında (yüzde) olan bir ödül çıkarsa tüm sunucuya duyurulur.
+duyuru-sans-esigi: 5
+
+# Animasyon kaç adım dönsün? (fazla = daha uzun)
+animasyon-adim: 45
+
+# Ödüllerde:
+#   esya: MALZEME:ADET
+#   isim: (isteğe bağlı) eşyanın özel adı
+#   buyuler: (isteğe bağlı) ["SHARPNESS:5", "UNBREAKING:3"]
+#   komutlar: (isteğe bağlı) konsoldan çalışır, %oyuncu% = oyuncu adı
+#   sans: ağırlık, büyük = daha sık çıkar
+# Sadece komut veren ödüllerde "esya" menüde görünecek simgedir, oyuncuya verilmez
+# (bunun için "sadece-komut: true" yazın).
+kasalar:
+  demir:
+    isim: "&7&lDEMİR KASA"
+    anahtar:
+      malzeme: TRIPWIRE_HOOK
+      isim: "&7Demir Kasa Anahtarı"
+      aciklama: ["&8Sadece &7Demir Kasa&8'yı açar.", "", "&eKasaya sağ tıkla!"]
+    oduller:
+      - { esya: "IRON_INGOT:16", sans: 30 }
+      - { esya: "BREAD:32", sans: 25 }
+      - { esya: "GOLD_INGOT:8", sans: 20 }
+      - { esya: "EXPERIENCE_BOTTLE:16", sans: 15 }
+      - { esya: "DIAMOND:2", sans: 8 }
+      - { esya: "GOLDEN_APPLE:4", sans: 2 }
+
+  altin:
+    isim: "&6&lALTIN KASA"
+    anahtar:
+      malzeme: TRIPWIRE_HOOK
+      isim: "&6Altın Kasa Anahtarı"
+      aciklama: ["&8Sadece &6Altın Kasa&8'yı açar.", "", "&eKasaya sağ tıkla!"]
+    oduller:
+      - { esya: "GOLD_BLOCK:4", sans: 30 }
+      - { esya: "DIAMOND:6", sans: 25 }
+      - { esya: "GOLDEN_APPLE:8", sans: 20 }
+      - { esya: "ENDER_PEARL:16", sans: 15 }
+      - { esya: "DIAMOND_PICKAXE:1", isim: "&bAltın Kazma", buyuler: ["EFFICIENCY:4", "UNBREAKING:3"], sans: 7 }
+      - { esya: "ENCHANTED_GOLDEN_APPLE:1", sans: 3 }
+
+  efsanevi:
+    isim: "&d&lEFSANEVİ KASA"
+    anahtar:
+      malzeme: TRIPWIRE_HOOK
+      isim: "&dEfsanevi Kasa Anahtarı"
+      aciklama: ["&8Sadece &dEfsanevi Kasa&8'yı açar.", "", "&eKasaya sağ tıkla!"]
+    oduller:
+      - { esya: "DIAMOND_BLOCK:4", sans: 30 }
+      - { esya: "NETHERITE_INGOT:1", sans: 20 }
+      - { esya: "ENCHANTED_GOLDEN_APPLE:3", sans: 20 }
+      - { esya: "TOTEM_OF_UNDYING:1", sans: 15 }
+      - { esya: "NETHERITE_SWORD:1", isim: "&d&lEfsanevi Kılıç", buyuler: ["SHARPNESS:5", "FIRE_ASPECT:2", "UNBREAKING:3"], sans: 10 }
+      - { esya: "ELYTRA:1", isim: "&5Ejderha Kanatları", sans: 5 }
+
+mesajlar:
+  onek: "&8[&6Kasa&8] &r"
+  yanlis-anahtar: "&cBu kasayı açmak için &f%kasa% &canahtarı gerekiyor!"
+  anahtar-yok: "&cBu kasayı açmak için anahtar gerekiyor! &7(Sol tık: içeriği gör)"
+  zaten-aciyor: "&cZaten bir kasa açıyorsun!"
+  kazandin: "&a%kasa% &7kasasından &f%odul% &7çıktı!"
+  duyuru: "&6&l★ &e%oyuncu% &7, %kasa% &7kasasından &f%odul% &7çıkardı! &6&l★"
+  alan-yok: "&cKasa alanı henüz ayarlanmamış."
+  isinlandin: "&aKasa alanına ışınlandın!"
+  yetki-yok: "&cBunun için yetkin yok."
