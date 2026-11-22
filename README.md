@@ -3,6 +3,8 @@
 Paper/Spigot sunucuları için **anahtarlı ve animasyonlu Türkçe kasa (sandık) sistemi**.
 Oyuncu doğru anahtarla kasaya sağ tıklar, eşyalar döner, yavaşlar ve rastgele bir ödülde durur.
 
+**⬇️ İndir:** [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/key-crates-with-spin-animation-kasasistemi) (önerilen) • [GitHub Releases](../../releases)
+
 ## Özellikler
 - **Sınırsız kasa:** Her kasanın kendi adı, anahtarı ve ödül listesi var
 - **Kasaya özel anahtarlar:** Demir anahtar Efsanevi kasayı açmaz
@@ -30,7 +32,7 @@ Oyuncu doğru anahtarla kasaya sağ tıklar, eşyalar döner, yavaşlar ve rastg
 Kasaya **sağ tık** açar, **sol tık** içeriği gösterir.
 
 ## Kurulum
-1. [Releases](../../releases) kısmından `KasaSistemi-x.x.x.jar` dosyasını indirin.
+1. [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/key-crates-with-spin-animation-kasasistemi) ya da [Releases](../../releases) kısmından `KasaSistemi-x.x.x.jar` dosyasını indirin.
 2. Sunucunun `plugins` klasörüne atın ve sunucuyu yeniden başlatın.
 3. Bir sandığa bakıp `/kasa koy demir` yazın, kendinize `/kasa anahtar <adınız> demir 1` ile anahtar verin.
 4. Kasaları ve ödülleri `plugins/KasaSistemi/config.yml` dosyasından düzenleyip `/kasa yenile` yazın.
